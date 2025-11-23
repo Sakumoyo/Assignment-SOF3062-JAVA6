@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:replace="${title}">Demo</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body>
+    <!-- Header-->
+    <header th:replace="layout/header :: header"></header>
+
+
+    <!-- Content -->
+    <main class="container mt-4" th:replace="${content}"></main>
+
+
+    <!-- Footer -->
+    <footer th:replace="layout/footer :: footer"></footer>
+
+</body>
+</html>
